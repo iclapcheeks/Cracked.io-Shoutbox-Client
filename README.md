@@ -18,6 +18,12 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the dep
 pip install -r requirements.txt
 ```
 
+## Usage
+
+```bash
+python3 client.py
+```
+
 ## Setup
 
 - Goto cracked.io and open up devtools
