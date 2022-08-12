@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```bash
-python3 src\client.pyw
+python3 client.pyw
 ```
 
 ## Setup
