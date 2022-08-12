@@ -32,9 +32,6 @@ class Client():
         self._connected = Event()
         self._websocket = self.create_websocket()
 
-        self.spam = 0
-        self.member = ''
-
         self.insert = pyqtSignal
 
         self.start()
