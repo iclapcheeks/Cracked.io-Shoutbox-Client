@@ -117,7 +117,7 @@ class Client():
             self._websocket.send('2')
             # Ping message
 
-            time.sleep(15)
+            time.sleep(10)
 
     def parse_message(self, message):
         user = message['username']
@@ -213,7 +213,7 @@ class Client():
         Thread(
             target=self._websocket.run_forever,
             kwargs={
-                'ping_interval': 10,
+                'ping_interval': 5,
                 'ping_timeout': 5
             }
         ).start()
