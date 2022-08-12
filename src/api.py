@@ -213,8 +213,8 @@ class Client():
         Thread(
             target=self._websocket.run_forever,
             kwargs={
-                'ping_interval': 5,
-                'ping_timeout': 5
+                'ping_interval': 15,
+                'ping_timeout': 10
             }
         ).start()
 
