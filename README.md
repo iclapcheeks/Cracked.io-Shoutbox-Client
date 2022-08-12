@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://i.imgur.com/1FOB2JF.png"/>
+    <img src="https://i.imgur.com/vQS2mI9.png"/>
     <p>
       <a href="https://github.com/iclapcheeks/Cracked.io-Shoutbox-Client/pulse">
         <img alt="Last commit" src="https://img.shields.io/github/last-commit/iclapcheeks/Cracked.io-Shoutbox-Client"/>
@@ -12,49 +12,19 @@
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Atshop.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the dependencies.
 
 ```bash
-pip install atshop
+pip install -r requirements.txt
 ```
 
-## Usage
-```python
-from atshop import Client
+## Setup
 
-client = Client()
-client.login('token')
+- Goto cracked.io and open up devtools
+- Click the console tab and execute `Shoutbox.userToken`
+- Once copied start the client and goto the options tab, there you want to press the settings button and paste your token and hit save
+- Finally, click connect and you're up and running!
 
-product = client.request(
-    method='admin.product.add',
+## Contributing
 
-    shop_id='4AueTN7mx6xRurrfu',
-    product={
-        'name': 'Clap is cool <3',
-        'description': '',
-        'purchaseNotes': '',
-        'value': 100,
-        'icon': '',
-        'minQuantity': 1,
-        'maxQuantity': 0,
-        'image_url': '',
-        'style': 'box',
-        'requireShipping': 'no',
-        'paymentMethods': [],
-        'maxDisplayedStock': 0,
-        'preventDuplicates': True,
-        'priority': 0,
-        'category': '',
-        'displayDescription': True,
-        'useOrderIdAsItemName': False,
-        'hidden': False,
-        'notForSale': False
-    }
-)
-
-print(product['result'])
-```
-
-## Documentation
-
-Everything you need is listed in the [Atshop Documentation](https://docs.atshop.io/).
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
