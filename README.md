@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://i.imgur.com/vQS2mI9.png"/>
+    <img src="https://i.imgur.com/cg4z5mQ.png"/>
     <p>
       <a href="https://github.com/iclapcheeks/Cracked.io-Shoutbox-Client/pulse">
         <img alt="Last commit" src="https://img.shields.io/github/last-commit/iclapcheeks/Cracked.io-Shoutbox-Client"/>
@@ -30,6 +30,11 @@ python3 client.pyw
 - Click the console tab and execute `Shoutbox.userToken`
 - Once copied start the client and goto the options tab, there you want to press the settings button and paste your token and hit save
 - Finally, click connect and you're up and running!
+
+## To do
+
+- [ ] Add support for custom ugs
+- [ ] Make autoscroll less buggy and work when user is not on the tab (or invert the widget using a custom delegate)
 
 ## Contributing
 
