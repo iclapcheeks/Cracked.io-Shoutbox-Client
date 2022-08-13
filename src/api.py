@@ -126,6 +126,16 @@ class Client():
         name = user.split('">')[-1].partition('</span></a>')[0]
         name = f'<span class="name">&nbsp;&nbsp;&nbsp;&nbsp;{name}</span>'
 
+        items = list(
+            filter(
+                None,
+                [
+                    k if k in content else None
+                    for k in next(os.walk('assets/images/items'), (None, None, []))[2]
+                ]
+            )
+        )
+
         group = list(
             filter(
                 None,

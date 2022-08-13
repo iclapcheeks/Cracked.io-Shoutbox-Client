@@ -64,7 +64,12 @@ class Actions(QWidget):
         )
 
     def save_settings(self):
-        with open('assets/configs/settings', 'wb') as file:
+        with open(
+            self.resource(
+                'assets/configs/settings'
+            ),
+            'wb'
+        ) as file:
             pickle.dump(
                 self.Window.token.text(),
                 file
@@ -76,7 +81,12 @@ class Actions(QWidget):
 
     def load_settings(self):
         try:
-            with open('assets/configs/settings', 'rb') as file:
+            with open(
+                self.resource(
+                    'assets/configs/settings'
+                ),
+                'rb'
+            ) as file:
                 data = pickle.load(file)
 
             self.Window.token.setText(data)
